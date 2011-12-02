@@ -1,0 +1,157 @@
+/* Reset styles */
+
+html {
+  height: 100%;
+}
+
+body {
+  margin:0px;
+  padding:0px;
+  height: 100%;
+}
+
+div {
+  margin:0px;
+  padding:0px;
+}
+
+h1, h2, h3, h4, h5, p, table, a {
+  margin-top: 0px;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+/* Reference Styles */
+
+.round-corners {
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-radius: 8px;
+}
+
+.transparency {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* Utility styles */
+
+.clear {
+  clear: both;
+}
+
+/* Container-specific styles */
+
+body {
+  background-color: #bbbbbb;
+  color: #fbe254;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#main {
+  margin: 0px auto auto auto;
+  width: 720px;
+}
+
+#header {
+  position: relative;
+  margin-bottom: 8px;
+  height: 72px;
+  background-color: #000000;
+}
+
+#logo {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 189px;
+  height: 40px;
+  background-image: url(../images/logo.gif);
+}
+
+#menu {
+  float: left;
+  margin-right: 8px;
+  width: 172px;
+  padding-top: 8px;
+  padding-bottom: 32px;
+  font-weight: bold;
+  color: #ff0000;
+  background-color: #000000;
+}
+
+.menu-item-active {
+  color: #fbe254;
+}
+
+.menu-level-1 {
+  padding: 8px 8px 0px 16px;
+  cursor: pointer;
+}
+
+.menu-level-2-container {
+  display: none;
+}
+
+.menu-level-2 {
+  padding: 8px 8px 0px 32px;
+  cursor: pointer;
+}
+
+#content-area {
+  float: right;
+  width: 540px;
+  min-height: 540px;
+  background-color: #000000;
+}
+
+#content-fractal {
+  width: 540px;
+  height: 540px;
+  background-image: url(../images/fractal1-540x540.jpg);
+  background-repeat: no-repeat;
+}
+
+#content {
+  margin: 32px;
+  min-height: 476px;
+  background-color: #000000;
+}
+
+#content a {
+  text-decoration: none;
+  color: #fbe254;
+}
+
+
+
+
+
+

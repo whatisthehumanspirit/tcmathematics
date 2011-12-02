@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <title>TC Mathematics</title>
+
+        <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var currentPage = '';
+                
+                $('.menu-level-1').click(function() {
+                    var url = $(this).attr('name');
+                    
+                    if (url != currentPage) {
+                        currentPage = url;
+                        $('#content').detach();
+                        $('#content-area').load(url);
+                    } else if (url = '') {
+                        currentPage = '';
+                        $('#content').detach();
+                    }
+                    
+                    if ( $(this).next().css('display') != 'block' ) {
+                        $('.menu-level-2-container').hide(250);
+                        $(this).next('.menu-level-2-container').show(500);
+                    }
+                });
+                
+                $('.menu-level-2').click(function() {
+                    var url = $(this).attr('name');
+                    
+                    if (url != currentPage) {
+                        currentPage = url;
+                        $('#content').detach();
+                        $('#content-area').load(url);
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="header">
+                <div id="logo"></div>
+            </div>
+            
+            <div id="main-content">
+                <div id="content-area">
+
+                </div>
+                
+                <div id="menu">
+                    <div class="menu-level-1">Period 1</div>
+                    <div class="menu-level-2-container">
+                        <div class="menu-level-2">Handouts</div>
+                        <div class="menu-level-2" name="period-1-notes.html">Class Notes</div>
+                    </div>
+                    
+                    <div class="menu-level-1">Period 3</div>
+                    <div class="menu-level-2-container">
+                        <div class="menu-level-2">Handouts</div>
+                        <div class="menu-level-2" name="period-3-notes.html">Class Notes</div>
+                    </div>
+                    
+                    <div class="menu-level-1">Period 4</div>
+                    <div class="menu-level-2-container">
+                        <div class="menu-level-2">Handouts</div>
+                        <div class="menu-level-2" name="period-4-notes.html">Class Notes</div>
+                    </div>
+                    
+                    <div class="menu-level-1">Period 5</div>
+                    <div class="menu-level-2-container">
+                        <div class="menu-level-2" name="period-5-handouts.html">Handouts</div>
+                        <div class="menu-level-2" name="period-5-notes.html">Class Notes</div>
+                    </div>
+                    
+                    <div class="menu-level-1" name="">Activities</div>
+                    
+                    <div class="menu-level-1" name="basic-skills.html">Basic Skills</div>
+                </div>
+            </div>
+            
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>
