@@ -1,5 +1,6 @@
                 </div><!-- This is the end of the page content area. -->
                 
+                <!-- This is the menu container -->
                 <div id="menu">
                     <div class="menu-level-1" id="period-1">Period 1</div>
                     <div class="menu-level-2-container">
