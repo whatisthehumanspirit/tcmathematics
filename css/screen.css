@@ -66,10 +66,10 @@ table {
   clear: both;
 }
 
-/* Container-specific styles */
+/* Site styles */
 
 body {
-  background-color: #bbbbbb;
+  background-color: #000000;
   color: #fbe254;
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
@@ -82,7 +82,6 @@ body {
 
 #header {
   position: relative;
-  margin-bottom: 8px;
   height: 72px;
   background-color: #000000;
 }
@@ -98,8 +97,7 @@ body {
 
 #menu {
   float: left;
-  margin-right: 8px;
-  width: 172px;
+  width: 180px;
   padding-top: 8px;
   padding-bottom: 32px;
   font-weight: bold;
