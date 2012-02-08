@@ -44,15 +44,15 @@ table {
 /* Reference Styles */
 
 .round-corners {
-  -webkit-border-top-left-radius: 8px;
-  -webkit-border-top-right-radius: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  -webkit-border-bottom-left-radius: 8px;
+	border-radius: 8px;
   -moz-border-radius-topleft: 8px;
   -moz-border-radius-topright: 8px;
   -moz-border-radius-bottomright: 8px;
   -moz-border-radius-bottomleft: 8px;
-  border-radius: 8px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
 }
 
 .transparency {
@@ -70,9 +70,20 @@ table {
 
 body {
   background-color: #000000;
-  color: #fbe254;
+  color: #ffffff;
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+h4 {
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 #main {
@@ -106,7 +117,7 @@ body {
 }
 
 .menu-item-active {
-  color: #fbe254;
+  color: #ffffff;
 }
 
 .menu-level-1 {
@@ -143,9 +154,53 @@ body {
   background-color: #000000;
 }
 
-#content a {
-  text-decoration: none;
-  color: #fbe254;
+/* Equation balancer */
+
+.algebra-tile-x {
+	border: 2px solid #990022;
+	width: 68px;
+	height: 112px;
+	background-color: #cc0000;
+}
+
+.algebra-tile-1 {
+	border: 2px solid #006622;
+	width: 68px;
+	height: 68px;
+	background-color: #008800;
+}
+
+.algebra-tile .label {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.algebra-tile-x .label {
+	margin-top: 44px;
+}
+
+.algebra-tile-1 .label {
+	margin-top: 26px;
+}
+
+#palette {
+	position: relative;
+	margin-bottom: 24px;
+	padding: 16px;
+	width: 444px;
+	height: 116px;
+	background-color: #888888;
+}
+
+#palette .algebra-tile-x {
+	float: left;
+	margin-right: 16px;
+}
+
+#palette .algebra-tile-1 {
+	float: left;
+	margin-right: 16px;
 }
 
 
