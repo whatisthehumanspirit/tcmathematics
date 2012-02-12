@@ -15,7 +15,7 @@
                         
                         <div id="palette" class="round-corners">
                             <div class="algebra-tile algebra-tile-x round-corners">
-                                <div class="label">X</div>
+                                <div class="label">x</div>
                             </div>
                             
                             <div class="algebra-tile algebra-tile-1 round-corners">
@@ -26,15 +26,31 @@
                         <h4>Balance</h4>
                         
                         <div id="balance-area">
-                            <div id="pan-1" class="balance-pan"></div>
-                            
-                            <div id="balance">
-                                <div id="tare" class="balance-button">Tare</div>
-                                <div id="measure" class="balance-button">Measure</div>
-                                <div id="reset" class="balance-button">Reset</div>
+                            <div id="balance" class="round-corners">
+                                <div id="tare" class="button round-corners">Tare</div>
+                                <div id="measure" class="button round-corners">Measure</div>
+                                <div id="reset" class="button round-corners">Reset</div>
                             </div>
                             
-                            <div id="pan-2 class="balance-pan"></div>
+                            <div id="pan-1" class="balance-pan round-corners">
+                              <div class="algebra-tile algebra-tile-x round-corners">
+                                <div class="label">x</div>
+                              </div>
+                        
+                              <div class="algebra-tile algebra-tile-1 round-corners">
+                                  <div class="label">1</div>
+                              </div>
+                            </div>
+                            
+                            <div id="pan-2" class="balance-pan round-corners">
+                              <div class="algebra-tile algebra-tile-x round-corners">
+                                <div class="label">x</div>
+                              </div>
+                        
+                              <div class="algebra-tile algebra-tile-1 round-corners">
+                                  <div class="label">1</div>
+                              </div>
+                            </div>
                         </div>
                     </div>
                                         

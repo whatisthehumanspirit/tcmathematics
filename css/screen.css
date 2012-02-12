@@ -187,24 +187,72 @@ a {
 #palette {
 	position: relative;
 	margin-bottom: 24px;
-	padding: 16px;
-	width: 444px;
 	height: 116px;
+}
+
+#palette .algebra-tile {
+	float: left;
+	margin-right: 16px;
+	cursor: pointer;
+}
+
+#balance-area {
+	position: relative;
+	height: 228px;
+}
+
+.balance-pan {
+	border: 2px solid #ffffff;
+	width: 184px;
+	height: 20px;
 	background-color: #888888;
 }
 
-#palette .algebra-tile-x {
-	float: left;
-	margin-right: 16px;
+#pan-1 {
+	position: absolute;
+	left: 0px;
+	top: 140px;
 }
 
-#palette .algebra-tile-1 {
-	float: left;
-	margin-right: 16px;
+#pan-2 {
+	position: absolute;
+	right: 0px;
+	top: 140px;
 }
 
+#balance {
+	position: absolute;
+	left: 174px;
+	bottom: 0px;
+	border: 2px solid #ffffff;
+	width: 92px;
+	padding: 16px 16px 0px 16px;
+	background-color: #888888;
+}
 
+.balance-pan .algebra-tile-x {
+	position: absolute;
+	left: 20px;
+	top: -118px;
+}
 
+.balance-pan .algebra-tile-1 {
+	position: absolute;
+	left: 92px;
+	top: -74px;
+}
+
+.button {
+	margin-bottom: 16px;
+	border: 2px solid #444444;
+	padding-top: 4px;
+	width: 88px;
+	height: 20px;
+	text-align: center;
+	background-color: #000000;
+	color: #ffffff;
+	cursor: pointer;
+}
 
 
 

@@ -26,8 +26,10 @@
                         <div class="menu-level-2 page" id="period-5-notes">Class Notes</div>
                     </div>
                     
-                    <div class="menu-level-1 page" id="activities">Activities</div>
-                    
+                    <div class="menu-level-1" id="activities">Activities</div>
+                    <div class="menu-level-2-container">
+                        <div class="menu-level-2 page" id="equation-balancer">Equation Balancer</div>
+                    </div>
                     <div class="menu-level-1 page" id="basic-skills">Basic Skills</div>
                 </div><!-- This is the end of the menu container. -->
             </div><!-- This is the end of the main content container. -->
