@@ -1,18 +1,15 @@
-<?php 
-    echo '<?xml version="1.0" encoding="UTF-8"?>';
-?>
+<!DOCTYPE html>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8">
 
         <title>TC Mathematics</title>
 
-        <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
         
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
         
         <script type="text/javascript">
             // These nested functions govern the behavior of the menu.
