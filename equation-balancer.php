@@ -74,9 +74,9 @@
                                 isTared = true;
                                 $(".balance-pan").animate({top: panHeightNormal}, 500);
                             } else if (numerator == 0 && denominator != 0) {
-                                 x = 0;
-                                 isTared = true;
-                                 $(".balance-pan").animate({top: panHeightNormal}, 500);
+                                x = 0;
+                                isTared = true;
+                                $(".balance-pan").animate({top: panHeightNormal}, 500);
                             } else if (numerator != 0 && denominator == 0) {
                                 message("These expressions are not equal!");
                             } else if (numerator == 0 && denominator == 0) {
