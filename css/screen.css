@@ -192,13 +192,36 @@ a {
 
 #palette .algebra-tile {
 	float: left;
+	z-index: 1000;
 	margin-right: 16px;
 	cursor: pointer;
 }
 
-#balance-area {
+#balance {
 	position: relative;
 	height: 228px;
+}
+
+#balance-mechanism {
+	position: absolute;
+	left: 174px;
+	bottom: 0px;
+	border: 2px solid #ffffff;
+	width: 92px;
+	padding: 16px 16px 0px 16px;
+	background-color: #888888;
+}
+
+.button {
+	margin-bottom: 16px;
+	border: 2px solid #444444;
+	padding-top: 4px;
+	width: 88px;
+	height: 20px;
+	text-align: center;
+	background-color: #000000;
+	color: #ffffff;
+	cursor: pointer;
 }
 
 .balance-pan {
@@ -220,39 +243,21 @@ a {
 	top: 140px;
 }
 
-#balance {
-	position: absolute;
-	left: 174px;
-	bottom: 0px;
-	border: 2px solid #ffffff;
-	width: 92px;
-	padding: 16px 16px 0px 16px;
-	background-color: #888888;
-}
-
 .balance-pan .algebra-tile-x {
+	visibility: hidden;
 	position: absolute;
 	left: 20px;
 	top: -118px;
 }
 
 .balance-pan .algebra-tile-1 {
+	visibility: hidden;
 	position: absolute;
 	left: 92px;
 	top: -74px;
 }
 
-.button {
-	margin-bottom: 16px;
-	border: 2px solid #444444;
-	padding-top: 4px;
-	width: 88px;
-	height: 20px;
-	text-align: center;
-	background-color: #000000;
-	color: #ffffff;
-	cursor: pointer;
-}
+
 
 
 
