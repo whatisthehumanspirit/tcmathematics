@@ -92,7 +92,7 @@
                                 if (pan1Total == pan2Total) {
                                     $("#pan-1").animate({top: panHeightNormal}, 500);
                                     $("#pan-2").animate({top: panHeightNormal}, 500);
-                                    message("Congratulations");
+                                    message("Congratulations!");
                                 } else if (pan1Total < pan2Total) {
                                     $("#pan-1").animate({top: panHeightMax}, 500);
                                     $("#pan-2").animate({top: panHeightMin}, 500);
