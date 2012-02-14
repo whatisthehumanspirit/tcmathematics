@@ -11,7 +11,7 @@
                         var panHeightMax = 116;
                         var panHeightNormal = 140;
                         var panHeightMin = 164;
-                        // array = [ x coefficient, constant ]
+                        // array = [ x-coefficient, constant ]
                         var pan1 = [0, 0];
                         var pan2 = [0, 0];
                         var x = 0;
@@ -72,11 +72,11 @@
                             if (numerator != 0 && denominator != 0) {
                                 x = numerator / denominator;
                                 isTared = true;
-                                $(".balance-pan").animate({top: panHeightNormal}, 500);
+                                $(".balance-pan").animate({top: panHeightNormal}, panAnimationTime);
                             } else if (numerator == 0 && denominator != 0) {
                                 x = 0;
                                 isTared = true;
-                                $(".balance-pan").animate({top: panHeightNormal}, 500);
+                                $(".balance-pan").animate({top: panHeightNormal}, panAnimationTime);
                             } else if (numerator != 0 && denominator == 0) {
                                 message("These expressions are not equal!");
                             } else if (numerator == 0 && denominator == 0) {
@@ -90,15 +90,15 @@
                                 var pan2Total = x * pan2[0] + pan2[1];
                             
                                 if (pan1Total == pan2Total) {
-                                    $("#pan-1").animate({top: panHeightNormal}, 500);
-                                    $("#pan-2").animate({top: panHeightNormal}, 500);
+                                    $("#pan-1").animate({top: panHeightNormal}, panAnimationTime);
+                                    $("#pan-2").animate({top: panHeightNormal}, panAnimationTime);
                                     message("Congratulations!");
                                 } else if (pan1Total < pan2Total) {
-                                    $("#pan-1").animate({top: panHeightMax}, 500);
-                                    $("#pan-2").animate({top: panHeightMin}, 500);
+                                    $("#pan-1").animate({top: panHeightMax}, panAnimationTime);
+                                    $("#pan-2").animate({top: panHeightMin}, panAnimationTime);
                                 } else if (pan1Total > pan2Total) {
-                                    $("#pan-1").animate({top: panHeightMin}, 500);
-                                    $("#pan-2").animate({top: panHeightMax}, 500);
+                                    $("#pan-1").animate({top: panHeightMin}, panAnimationTime);
+                                    $("#pan-2").animate({top: panHeightMax}, panAnimationTime);
                                 }
                             } else {
                                 message("First tare the balance!");
@@ -115,7 +115,7 @@
                             $("#pan-2 .algebra-tile-x .label").html("x");
                             $("#pan-2 .algebra-tile-1 .label").html("1");
                             $("#balance .algebra-tile").css("visibility", "hidden");
-                            $(".balance-pan").animate({top: panHeightNormal}, 500);
+                            $(".balance-pan").animate({top: panHeightNormal}, panAnimationTime);
                         }
                         
                         $(document).ready(function() {
