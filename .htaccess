@@ -2,4 +2,4 @@ RewriteEngine On
 
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{HTTP_HOST} ^www\.tcmathematics\.com$ [NC]
-RewriteRule ^(.*)$ http://tcmathematics.com/$1 [L,R=301]
+RewriteRule ^(.*)$ http://tcmathematics.com/$1 [R=301,L]
